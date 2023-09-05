@@ -20,6 +20,7 @@ div.relative {
     height: 850px;
     padding: 5px;
     scale: 100%;
+    margin: 0 auto;
     /*border: 3px solid rgb(254, 250, 236);*/
 }
 
@@ -216,18 +217,14 @@ p.centered {
 /* Media queries para dispositivos móviles y tabletas */
 @media (max-width: 768px) {
     .rounded-canvas {
-        border-radius: 0;
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
     }
 
         /* Estilos de la sección principal */
     .menu {
         margin-top: 10px;
-    }
-
-    .rounded-canvas {
-        max-width: 100%;
-        height: auto;
-        border-radius: 25px;
     }
 
 }
