@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Fractal</title>
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Rubik+Iso&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <p class="centeredtitle">Gato Fractal</p>
+        </div>
+
+        <canvas id="myCanvas" class="rounded-canvas" width="800" height="850">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <div class="menu" id="startMenu">
+            <p class="centered"><button onclick="pickTurns()">1 Jugador</button></p>
+            <p class="centered"><button onclick="startGame(1)">2 Jugadores</button></p>
+        </div>
+
+        <div class="menu" id="turnMenu" hidden="hidden">
+            <p class="centered"><button onclick="setGame(0)">Empieza Humano</button></p>
+            <p class="centered"><button onclick="setGame(1)">Empieza Maquina</button></p>
+        </div>
+
+        <div class="menu" id="winMenu" hidden="hidden">
+            <p class="centeredbig" id="result">Jugador 1 Gana!</p>
+            <p class="centered"><button onclick="menu()">Jugar de nuevo</button></p>
+        </div>
+
+        <div class="loader" id="loader" hidden>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>

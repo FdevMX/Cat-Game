@@ -1,0 +1,233 @@
+/* Fuente personalizada */
+
+/* Estilos del body */
+body {
+    font-family: 'Rubik Iso', cursive;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.relative {
+    position: relative;
+    width: 800px;
+    height: 850px;
+    padding: 5px;
+    scale: 100%;
+    /*border: 3px solid rgb(254, 250, 236);*/
+}
+
+div.absolute {
+    position: absolute;
+    top: 26%;
+    right: 15%;
+    width: 70%;
+    height: 33%;
+}
+
+/* Estilos de la sección principal */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 30px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-canvas {
+    border-radius: 35px;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #c9dbfe;
+    border: none;
+    color: #3b4b8a;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Aldrich', sans-serif;
+    text-shadow: 3px 3px #a3b4f8;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 10px; /* se agrega un espacio de 10px entre los botones */
+    cursor: pointer;
+    border-radius: 18px;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgb(165, 188, 231);
+}
+
+button:active {
+    background: rgb(155, 175, 212);
+}
+button:focus {
+    outline:0;
+}
+
+#loader{
+    pointer-events: none;
+}
+
+/* Estilos de los textos secundarios */
+p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555555;
+    text-align: center;
+}
+
+p.centeredtitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: 'VT323', monospace;
+    font-size: 90px;
+    color: #145880;
+    text-shadow: 3px 3px #7cc4ed;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+p.centeredbig {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: #145880;
+    text-shadow: 3px 3px #7cc4ed;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+p.instructionText {
+    text-align: center;
+    font-weight: bold;
+    line-height: 15px;
+/*    font-family: 'Arial';*/
+    font-size: 16px;
+    color: #4A597F;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+p.scoretext {
+    text-align: right;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 25px;
+    color: gray;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+p.gamescoretext {
+    text-align: left;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 25px;
+    color: gray;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+p.centered {
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4A597F;
+}
+
+/* Estilos del loader */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top: 20%;
+    margin-left: 3%;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #ff7f50;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ff7f50 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .rounded-canvas {
+        border-radius: 0;
+    }
+
+        /* Estilos de la sección principal */
+    .menu {
+        margin-top: 10px;
+    }
+
+    .rounded-canvas {
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+}
